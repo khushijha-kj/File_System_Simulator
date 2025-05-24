@@ -123,10 +123,13 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👩‍💻 Author
+## 👩‍💻 Contributors
 
 - Khushi Kumari Jha
+- Divyanshi Rasotia
+- Bhawna Bisht
+- Shambhavee Shukla
 
 ---
 
-Feel free to [open an issue](https://github.com/yourusername/file-system-simulator/issues) if you have questions or suggestions!
+Feel free to [open an issue](https://github.com/khushijha-kj/file-system-simulator/issues) if you have questions or suggestions!
