@@ -65,6 +65,7 @@ pip install -r requirements.txt
 
 cd Ram_Simulator/V2
 streamlit run gui.py
+```
 
 ## 🔍 How It Works
 
