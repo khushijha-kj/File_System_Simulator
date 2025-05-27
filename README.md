@@ -115,6 +115,7 @@ Define your RAM size, virtual memory space, and frame size. Choose between two a
 
 ## 📁 Project Structure
 
+```
 File_System_Simulator/
 ├── Proposal/                   # Project proposal and related documents
 ├── Ram_Simulation_V2/         # Version 2 with paging implementation
@@ -126,7 +127,7 @@ File_System_Simulator/
 ├── LICENSE                    # Project license (MIT)
 ├── README.md                  # Project overview and instructions
 ├── reuirements.txt            # Python dependencies (note: typo in name)
-
+```
 
 ## 🔮 Future Enhancements
 
