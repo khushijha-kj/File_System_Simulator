@@ -29,6 +29,14 @@ An interactive educational simulator that visually demonstrates how operating sy
 
 ---
 
+## 🎬 Video Demo
+
+[![Watch the video](https://img.youtube.com/vi/rqb7JYhAAM4/maxresdefault.jpg)](https://youtu.be/rqb7JYhAAM4)
+
+*(Link to your video demo. You can use a GIF or a static image linking to the video.)*
+
+---
+
 ## 🏫 Who Is This For?
 
 - **Computer Science Students** learning OS fundamentals  
