@@ -1,135 +1,166 @@
-# File System Memory Simulator
+# 🧠 File System Memory Simulator
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-A comprehensive educational tool that simulates how modern operating systems manage memory for file storage and retrieval operations. This simulator provides a visual and interactive environment to understand memory management concepts, page tables, and file system operations.
-
-## 🚀 Features
-
-- **Virtual Memory Simulation**: Implements a complete virtual memory system with page tables
-- **RAM Management**: Visualizes memory frames, allocation, and access patterns
-- **File Operations**: Simulates storing, retrieving, and managing files in memory
-- **Interactive GUI**: User-friendly Streamlit interface for easy interaction
-- **Memory Visualization**: Visual representations of memory allocation and usage
-- **Educational Insights**: Step-by-step explanations of memory operations
-
-## 📋 Requirements
-
-- Python 3.6+
-- Streamlit
-- Pandas
-- Matplotlib
-- NumPy
-
-## 🔧 Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/khushijha-kj/file-system-simulator.git
-   cd File_System_Simulator
-   ```
-
-2. **Create and activate a virtual environment (optional but recommended)**
-   ```bash
-   python -m venv venv
-   
-   # On Windows
-   venv\Scripts\activate
-   
-   # On macOS/Linux
-   source venv/bin/activate
-   ```
-
-3. **Install dependencies**
-   ```bash
-   pip install -r reuirements.txt
-   ```
-
-## 💻 Usage
-
-1. **Start the application**
-   ```bash
-   cd Ram_Simulator
-   streamlit run gui_mod.py
-   ```
-
-2. **Setting up the Memory System**
-   - Configure RAM size (in MB) and frame size (in KB)
-   - Configure virtual address space size (in MB)
-   - Choose page replacement algorithm (LRU, FIFO, etc.)
-
-3. **Working with Files**
-   - Upload files to store in the simulator
-   - View memory allocation for each file
-   - Retrieve files from memory
-   - Observe memory management operations in real-time
-
-4. **Monitor Memory State**
-   - View RAM utilization charts
-   - Examine page table entries
-   - Visualize frame allocation
-   - Track page faults and replacements
-
-## 🎓 Educational Value
-
-This simulator is designed as an educational tool for:
-
-- **Computer Science Students**: Understanding memory management concepts
-- **Operating Systems Courses**: Visualizing virtual memory implementation
-- **Software Developers**: Gaining insights into system-level operations
-- **Instructors**: Demonstrating memory concepts in a visual, interactive way
-
-## 🏗️ Project Structure
-
-```
-File_System_Simulator/
-├── Ram_Simulator/
-│   ├── gui.py           # Streamlit GUI implementation
-│   ├── gui_mod.py       # Modified GUI with additional features
-│   ├── page_table.py    # Page table implementation
-│   ├── ram.py           # RAM simulation
-│   └── ui.py            # UI components
-├── LICENSE              # MIT License
-├── README.md            # This file
-└── reuirements.txt      # Project dependencies
-```
-
-## 🔍 Implementation Details
-
-- **RAM Class**: Simulates physical memory divided into frames
-- **PageTable Class**: Implements virtual-to-physical address translation
-- **PageTableEntry Class**: Manages page metadata (present, modified, etc.)
-- **Disk Class**: Simulates secondary storage for files
-- **Streamlit Interface**: Provides interactive controls and visualizations
-
-## ⚠️ Limitations and Future Enhancements
-
-- **Concurrency**: Currently does not simulate concurrent memory access
-- **File System**: Basic file system operations; could be extended with more advanced file system features
-- **Fragmentation**: Plans to add visual representation of memory fragmentation
-- **Performance Metrics**: Additional statistics on memory operations could be added
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 👩‍💻 Contributors
-
-- Khushi Kumari Jha
-- Divyanshi Rasotia
-- Bhawna Bisht
-- Shambhavee Shukla
+An interactive educational simulator that visually demonstrates how operating systems manage memory for file storage and retrieval. Ideal for students and instructors alike, this tool offers hands-on experience with concepts like virtual memory, RAM allocation, page tables, and file system operations — all through a user-friendly Streamlit interface.
 
 ---
 
-Feel free to [open an issue](https://github.com/khushijha-kj/file-system-simulator/issues) if you have questions or suggestions!
+## ✨ Key Features
+
+- **🔧 Memory System Setup**  
+  Configure RAM size, virtual memory space, and page/frame size. Choose between paging and contiguous memory allocation strategies.
+
+- **📁 File Storage Modes**  
+  - **Contiguous Allocation**: Supports *First Fit*, *Best Fit*, and *Quick Fit* algorithms with comparative analysis and real-time visualization.
+  - **Paging-Based Allocation**: Non-contiguous memory storage using paging with page table mapping and virtual memory management.
+
+- **📤 File Retrieval**  
+  Retrieve stored files by name and download them from memory.
+
+- **📊 Memory Usage Monitoring**  
+  Visual dashboards for both RAM and virtual memory usage, with dynamic usage statistics and charts.
+
+- **🧾 Page Table Viewer**  
+  Inspect virtual-to-physical address translations and page-level metadata like presence and modification bits.
+
+- **🗺️ Memory Map Visualization**  
+  View color-coded memory maps that reflect current file allocations, memory fragmentation, and access behavior.
+
+---
+
+## 🏫 Who Is This For?
+
+- **Computer Science Students** learning OS fundamentals  
+- **Instructors and Educators** teaching memory management visually  
+- **Aspiring Developers** interested in low-level systems understanding  
+- **Hackathon Teams & Researchers** simulating memory models for projects
+
+---
+
+## 🛠️ Tech Stack & Requirements
+
+- **Language**: Python 3.6+
+- **Libraries**:  
+  `streamlit`, `pandas`, `matplotlib`, `numpy`
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/khushijha-kj/file-system-simulator.git
+cd File_System_Simulator
+
+python -m venv venv
+
+# Windows
+venv\Scripts\activate
+
+# macOS/Linux
+source venv/bin/activate
+
+pip install -r requirements.txt
+
+cd Ram_Simulator/V2
+streamlit run gui.py
+
+## 🔍 How It Works
+
+### 🧱 Setup Memory System
+Define your RAM size, virtual memory space, and frame size. Choose between two allocation strategies:
+- **Paging**
+- **Contiguous Allocation** (First Fit, Best Fit, Quick Fit)
+
+---
+
+### 📥 Store Files in Memory
+- Select a storage strategy: **Contiguous** or **Non-Contiguous (Paging)**
+- Upload the file
+- File gets allocated in memory based on the chosen strategy
+- Visual confirmation provided via a dynamic **Memory Map**
+
+---
+
+### 📤 Retrieve Files
+- Select a stored file by name
+- Download it directly from memory
+
+---
+
+### 📊 Monitor Memory Usage
+- View real-time statistics of:
+  - RAM utilization
+  - Virtual memory usage
+- Graphs and charts provide visual insight into memory load
+
+---
+
+### 📑 Page Table Inspection
+- Explore virtual-to-physical address translation
+- View metadata for each page:
+  - Presence bit
+  - Modified bit
+  - Frame number
+
+---
+
+### 🗺️ Memory Map
+- Color-coded, interactive visual map of memory blocks
+- Shows which files occupy which memory segments
+- Updates dynamically on file storage/retrieval
+
+
+## 📁 Project Structure
+
+File_System_Simulator/
+├── Proposal/                   # Project proposal and related documents
+├── Ram_Simulation_V2/         # Version 2 with paging implementation
+├── Ram_Simulator/             # Version 1 with basic RAM simulation
+│   ├── file_system.py         # Core memory allocation logic
+│   ├── file_system_simulator_ui.py  # Streamlit UI for memory simulation
+│   ├── main.py                # Entry point to run the simulator
+├── .gitignore                 # Specifies files ignored by Git
+├── LICENSE                    # Project license (MIT)
+├── README.md                  # Project overview and instructions
+├── reuirements.txt            # Python dependencies (note: typo in name)
+
+
+## 🔮 Future Enhancements
+
+- Add concurrency simulation for parallel file access  
+- Introduce advanced file system operations  
+- Visualize internal and external fragmentation  
+- Add detailed performance metrics (e.g., page faults, hit/miss ratio)  
+
+---
+
+## 🤝 Contributions
+
+We welcome contributions!  
+To contribute:
+
+1. Fork this repository  
+2. Create your feature branch:  
+   ```bash
+   git checkout -b feature/new-feature
+
+   git commit -m 'Add new feature'
+
+   git push origin feature/new-feature
+
+3. Open a Pull Request
+
+## 👩‍💻 Authors
+
+- Khushi Kumari Jha  
+- Divyanshi Rasotia  
+- Bhawna Bisht  
+- Shambhavee Shukla  
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
