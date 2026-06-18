@@ -1,4 +1,4 @@
-# 🧠 File System Memory Simulator
+#  File System Memory Simulator
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
@@ -6,30 +6,30 @@ An interactive educational simulator that visually demonstrates how operating sy
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
 - **🔧 Memory System Setup**  
   Configure RAM size, virtual memory space, and page/frame size. Choose between paging and contiguous memory allocation strategies.
 
-- **📁 File Storage Modes**  
+- ** File Storage Modes**  
   - **Contiguous Allocation**: Supports *First Fit*, *Best Fit*, and *Quick Fit* algorithms with comparative analysis and real-time visualization.
   - **Paging-Based Allocation**: Non-contiguous memory storage using paging with page table mapping and virtual memory management.
 
-- **📤 File Retrieval**  
+- ** File Retrieval**  
   Retrieve stored files by name and download them from memory.
 
-- **📊 Memory Usage Monitoring**  
+- ** Memory Usage Monitoring**  
   Visual dashboards for both RAM and virtual memory usage, with dynamic usage statistics and charts.
 
-- **🧾 Page Table Viewer**  
+- ** Page Table Viewer**  
   Inspect virtual-to-physical address translations and page-level metadata like presence and modification bits.
 
-- **🗺️ Memory Map Visualization**  
+- ** Memory Map Visualization**  
   View color-coded memory maps that reflect current file allocations, memory fragmentation, and access behavior.
 
 ---
 
-## 🎬 Video Demo
+##  Video Demo
 
 [![Watch the video](https://img.youtube.com/vi/rqb7JYhAAM4/maxresdefault.jpg)](https://youtu.be/rqb7JYhAAM4)
 
@@ -37,7 +37,7 @@ An interactive educational simulator that visually demonstrates how operating sy
 
 ---
 
-## 🏫 Who Is This For?
+##  Who Is This For?
 
 - **Computer Science Students** learning OS fundamentals  
 - **Instructors and Educators** teaching memory management visually  
@@ -46,7 +46,7 @@ An interactive educational simulator that visually demonstrates how operating sy
 
 ---
 
-## 🛠️ Tech Stack & Requirements
+##  Tech Stack & Requirements
 
 - **Language**: Python 3.6+
 - **Libraries**:  
@@ -54,7 +54,7 @@ An interactive educational simulator that visually demonstrates how operating sy
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### 1. Clone the Repository
 ```bash
@@ -75,16 +75,16 @@ cd Ram_Simulator/V2
 streamlit run gui.py
 ```
 
-## 🔍 How It Works
+##  How It Works
 
-### 🧱 Setup Memory System
+###  Setup Memory System
 Define your RAM size, virtual memory space, and frame size. Choose between two allocation strategies:
 - **Paging**
 - **Contiguous Allocation** (First Fit, Best Fit, Quick Fit)
 
 ---
 
-### 📥 Store Files in Memory
+###  Store Files in Memory
 - Select a storage strategy: **Contiguous** or **Non-Contiguous (Paging)**
 - Upload the file
 - File gets allocated in memory based on the chosen strategy
@@ -92,13 +92,13 @@ Define your RAM size, virtual memory space, and frame size. Choose between two a
 
 ---
 
-### 📤 Retrieve Files
+###  Retrieve Files
 - Select a stored file by name
 - Download it directly from memory
 
 ---
 
-### 📊 Monitor Memory Usage
+###  Monitor Memory Usage
 - View real-time statistics of:
   - RAM utilization
   - Virtual memory usage
@@ -106,7 +106,7 @@ Define your RAM size, virtual memory space, and frame size. Choose between two a
 
 ---
 
-### 📑 Page Table Inspection
+###  Page Table Inspection
 - Explore virtual-to-physical address translation
 - View metadata for each page:
   - Presence bit
@@ -115,13 +115,13 @@ Define your RAM size, virtual memory space, and frame size. Choose between two a
 
 ---
 
-### 🗺️ Memory Map
+###  Memory Map
 - Color-coded, interactive visual map of memory blocks
 - Shows which files occupy which memory segments
 - Updates dynamically on file storage/retrieval
 
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 File_System_Simulator/
@@ -137,7 +137,7 @@ File_System_Simulator/
 ├── reuirements.txt            # Python dependencies (note: typo in name)
 ```
 
-## 🔮 Future Enhancements
+##  Future Enhancements
 
 - Add concurrency simulation for parallel file access  
 - Introduce advanced file system operations  
@@ -146,7 +146,7 @@ File_System_Simulator/
 
 ---
 
-## 🤝 Contributions
+##  Contributions
 
 We welcome contributions!  
 To contribute:
@@ -162,12 +162,7 @@ To contribute:
 
 3. Open a Pull Request
 
-## 👩‍💻 Authors
 
-- Khushi Kumari Jha  
-- Divyanshi Rasotia  
-- Bhawna Bisht  
-- Shambhavee Shukla  
 
 ---
 
